@@ -75,24 +75,24 @@
                 <button class="btn rounded-full bg-purple-800 text-white px-4">
                     Life
                     <img src="images/love.png" alt="">
-                    <span>1</span>
+                    <span id="life">5</span>
                 </button>
                 <button class="btn rounded-full bg-purple-800 text-white px-4">
                     Score
                     <img src="images/doller.png" alt="">
-                    <span>1</span>
+                    <span id="score">0</span>
                 </button>
             </div>
             <!-- Live score end-->
         </section>
         <!-- Playground end -->
-        <section id="score" class="flex flex-col justify-center items-center min-h-screen hidden">
+        <section id="score-show" class="flex flex-col justify-center items-center min-h-screen hidden">
             <div class="text-center space-y-8 bg-[#FFFFFF33] p-8 rounded-3xl">
                 <h1 class=" text-6xl text-white">
                     <span class="font-bold">Score: </span>
-                    <span>14</span> 
+                    <span id="last-score">0</span> 
                 </h1>
-                <button class="btn bg-[#FFFFFF] text-black font-bold ">Paly Again</button>
+                <button onclick="playNow()" id="play-again" class="btn bg-[#FFFFFF] text-black font-bold ">Paly Again</button>
                 <p class="text-white text-2xl">Practice will make you Pro</p>
             </div>
         </section>
